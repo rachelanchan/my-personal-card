@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { QRCodeCanvas } from "qrcode.react";
 import ParticlesBackground from "../components/ParticlesBackground";
 import Image from 'next/image';
+import Head from 'next/head';
 import {FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt,} from "react-icons/fa";
 
 export default function Home() {
@@ -20,6 +21,26 @@ export default function Home() {
   const CARD_HEIGHT = 600;
 
   return (
+     <>
+      <Head>
+        <title>Rachel Anchan - Software Developer</title>
+        <meta name="description" content="Business Card" />
+
+        {/* Open Graph tags */}
+        <meta property="og:title" content="Rachel Anchan - Software Developer" />
+        <meta property="og:description" content="Business Card" />
+        <meta property="og:url" content="https://my-personal-card-git-card-flip-feature-rachelanchans-projects.vercel.app/" />
+        <meta property="og:image" content="https://my-personal-card-git-card-flip-feature-rachelanchans-projects.vercel.app/preview.png" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Rachel Anchan - Software Developer" />
+        <meta name="twitter:description" content="Business Card" />
+        <meta name="twitter:image" content="https://my-personal-card-git-card-flip-feature-rachelanchans-projects.vercel.app/preview.png" />
+
+      </Head>
+
     <main className="relative min-h-screen bg-transparent text-gray-900 flex items-center justify-center px-4 sm:px-6">
       <ParticlesBackground />
 
@@ -127,5 +148,6 @@ export default function Home() {
         </motion.div>
       </div>
     </main>
+     </>
   );
 }
