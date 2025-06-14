@@ -29,15 +29,15 @@ export default function Home() {
         {/* Open Graph tags */}
         <meta property="og:title" content="Rachel Anchan - Software Developer" />
         <meta property="og:description" content="Business Card" />
-        <meta property="og:url" content="https://my-personal-card-git-card-flip-feature-rachelanchans-projects.vercel.app/" />
-        <meta property="og:image" content="https://my-personal-card-git-card-flip-feature-rachelanchans-projects.vercel.app/preview.png" />
+        <meta property="og:url" content="https://my-personal-card-lac.vercel.app/" />
+        <meta property="og:image" content="https://my-personal-card-lac.vercel.app/preview.png" />
         <meta property="og:type" content="website" />
 
         {/* Twitter cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Rachel Anchan - Software Developer" />
         <meta name="twitter:description" content="Business Card" />
-        <meta name="twitter:image" content="https://my-personal-card-git-card-flip-feature-rachelanchans-projects.vercel.app/preview.png" />
+        <meta name="twitter:image" content="https://my-personal-card-lac.vercel.app/preview.png" />
 
       </Head>
 
