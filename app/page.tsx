@@ -9,7 +9,7 @@ export default function Home() {
   const linkedin = "https://linkedin.com/in/rachel-anchan";
   const email = "mailto:rachelanchan11@gmail.com";
   const portfolio = "https://rachelanchan.github.io";
-  const qrValue = github;
+  const qrValue = "https://my-personal-card-lac.vercel.app/";
 
   return (
     <main className="relative min-h-screen bg-transparent text-gray-900 flex items-center justify-center px-4 sm:px-6">
