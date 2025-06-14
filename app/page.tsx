@@ -4,12 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { QRCodeCanvas } from "qrcode.react";
 import ParticlesBackground from "../components/ParticlesBackground";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
-  FaExternalLinkAlt,
-} from "react-icons/fa";
+import Image from 'next/image';
+import {FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt,} from "react-icons/fa";
 
 export default function Home() {
   const [flipped, setFlipped] = useState(false);
@@ -53,11 +49,13 @@ export default function Home() {
             }}
           >
             {/* Profile Image */}
-            <img
+            <Image
               src="/rachel.png"
               alt="Rachel Anchan"
-              className="h-32 w-32 rounded-full border-4 border-gray-300 shadow-md mb-6 mt-8 object-cover"
-              loading="lazy"
+              width={128}       // 32 * 4 (Tailwind h-32 and w-32 is 8rem = 128px)
+              height={128}
+              className="rounded-full border-4 border-gray-300 shadow-md mb-6 mt-8 object-cover"
+              priority={true}   // loads immediately (no lazy) since it's important
             />
 
             {/* Name & Role */}
@@ -78,11 +76,10 @@ export default function Home() {
             />
 
             {/* Description */}
-            <p className="text-center text-gray-600 mt-6 mb-8 leading-relaxed max-w-xs">
+            <p className="text-center text-gray-600 mt-4 mb-6 leading-relaxed max-w-xs">
               Building scalable applications with meaningful user experiences.
             </p>
           </div>
-
 
           {/* Rear Side */}
           <div
@@ -94,6 +91,7 @@ export default function Home() {
               transform: "rotateY(180deg)",
             }}
           >
+            
             {/* This div will grow and center content vertically */}
             <div className="flex flex-col justify-center flex-grow">
               <h2 className="text-2xl font-bold mb-6">Connect with me</h2>
